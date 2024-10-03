@@ -1,0 +1,311 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(244 242 238);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body,
+nav,
+main {
+    width: 100%;
+}
+
+nav,
+main {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    all: unset;
+}
+
+/*Navbar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    height: 60px;
+    position: fixed;
+    top: 0;
+}
+
+.fa-linkedin {
+    font-size: 42px;
+    margin-right: 10px;
+    color: #0a66c2;
+}
+
+input {
+    width: 100% !important;
+    all: unset;
+}
+
+.search-container {
+    display: flex;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: rgb(237 243 248);
+    width: 20rem;
+}
+
+.search-container i {
+    justify-content: center;
+    margin-right: 10px;
+}
+
+li {
+    width: 80px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+li i {
+    font-size: 18px;
+}
+
+li i,
+h4 {
+    color: rgb(119 119 119);
+}
+
+nav img {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+li i:hover,
+h4:hover {
+    color: rgb(0 0 0 / 90%);
+    cursor: pointer;
+}
+
+
+/*Main container*/
+main {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feed-container-1 {
+    width: 20%;
+}
+
+.impressions {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+}
+
+.saved-items {
+    display: flex;
+    align-items: center;
+    line-height: 2;
+}
+
+.saved-items i {
+    font-size: small;
+    width: 30px;
+}
+
+.saved-items h6:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.feed-container-2 {
+    width: 52%;
+}
+
+.post-container {
+    border: 1px solid rgb(223 222 218);
+    padding: 10px;
+    border-radius: 30px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.post-container2 {
+    justify-content: space-around;
+    margin-top: 6px;
+}
+
+.post-container:hover {
+    cursor: pointer;
+    background-color: rgb(237, 235, 235);
+}
+
+.fa-image {
+    font-size: larger;
+    color: rgb(81 146 212);
+}
+
+.fa-bag-shopping {
+    font-size: larger;
+    color: rgb(168 113 234);
+}
+
+.fa-newspaper {
+    font-size: larger;
+    color: rgb(224 104 71);
+}
+
+.fa-circle {
+    font-size: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.post-card {
+    padding: 10px;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.post-card:hover {
+    background-color: #DADEDF;
+    cursor: pointer;
+}
+
+.feed-container-3 {
+    width: 25%;
+}
+
+.stories-game-container {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.game-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.game-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 20%;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 10px 15px 10px 15px;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 1px solid rgb(223 222 218);
+}
+
+.profile-sized {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.align-container {
+    gap: 4px;
+    align-items: center;
+}
+
+.impressions-count {
+    color: rgb(81 146 212);
+}
+
+.impressions:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.comment-repost-section {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.about-section {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+/*Common CSS*/
+h6 {
+    font-size: 12px;
+}
+
+hr {
+    color: #DADEDF;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+h6,
+h2 {
+    color: #777777;
+}
+
+h1,
+h3,
+h4 {
+    color: black;
+}
+
+/*Media Query*/
+@media only screen and (max-width: 768px){
+    nav,main{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .search-container {
+        width: 10rem;
+    }
+    li {
+        width: 66px;
+        height: 60px;
+    }
+}
